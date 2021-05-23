@@ -18,52 +18,7 @@ public class Search_Steps {
     	driver = Hooks.driver;
     }
     
-    @Given("^I go to gmail website$")
-    public void i_go_to_gmail_website() throws Throwable {
-    	PageFactory.initElements(driver, Search_PO.class);
-    	driver.get("http://gmail.com");
-    	//Assert.assertTrue(Search_PO.isGmailLoginPageVisible());
-    	
-    }
-
-    @When("^I enter username \"([^\"]*)\"$")
-    public void i_enter_username(String email) throws Throwable {
-    	PageFactory.initElements(driver, Search_PO.class);
-    	//Search_PO.setEmail(email);
-    }
-    
-    @When("^I click Next on login screen$")
-    public void i_click_Next_on_login_screen() throws Throwable {
-    	PageFactory.initElements(driver, Search_PO.class);
-    	//Search_PO.clickEmailNext();
-        //Assert.assertTrue(Search_PO.isGmailPasswordPageVisible());
-    }
-
-    @When("^I enter password \"([^\"]*)\"$")
-    public void i_enter_password(String password) throws Throwable {
-        PageFactory.initElements(driver, Search_PO.class);
-
-    }
-
-    @When("^I click Next on password screen$")
-    public void i_click_Next_on_password_screen() throws Throwable {
-    	PageFactory.initElements(driver, Search_PO.class);
-    	//Search_PO.clickPasswordNext();
-    	//Assert.assertTrue(Search_PO.isGmailHomePageVisible());
-    }
-
-    @Then("^I should see gmail home screen$")
-    public void i_should_see_gmail_home_screen() throws Throwable {
-    	PageFactory.initElements(driver, Search_PO.class);
-    	//Assert.assertTrue(Search_PO.isGmailHomePageVisible());
-    }
-
-    @Then("^I focus on Inbox$")
-    public void i_focus_on_Inbox() throws Throwable {
-    	PageFactory.initElements(driver, Search_PO.class);
-    	//Search_PO.focusInbox();
-    }
-
+   
 
 
     @Given("^I go to Search Islands website$")
